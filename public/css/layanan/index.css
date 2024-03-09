@@ -1,0 +1,163 @@
+
+#search-dropdown {
+    position: absolute;
+    background-color: #fff;
+    /* border: 1px solid #ccc; */
+    max-height: 200px;
+    overflow-y: auto;
+    width: 20%;
+    /* left: 14%; Atur posisi horizontal sesuai dengan kotak pencarian */
+    top: 80%; /* Atur posisi vertikal di bawah kotak pencarian */
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            flex: 0 0 calc(25% - 50px);
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            color: #000000;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            width: 275px;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .pagination {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .pagination li {
+        margin: 0 3px;
+        display: flex;
+        align-items: center;
+    }
+
+    .pagination a {
+        text-decoration: none;
+        padding: 15px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+        border-radius: 5px;
+        color: #007bff;
+        border: 1px solid #007bff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pagination .active a {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        p {
+            color: #000000;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card-img-top {
+            overflow: hidden;
+        }
+
+        /* Kecilkan semua gambar */
+        .card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: fill;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .card-buttons {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 200px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+
+
+        @media (max-width: 1000px) {
+            .card {
+                flex: 0 0 calc(50% - 20px);
+            }
+
+            button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .card {
+                flex: 0 0 100%;
+            }
+
+            .card-buttons {
+                width: 100%;
+            }
+
+            button {
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }

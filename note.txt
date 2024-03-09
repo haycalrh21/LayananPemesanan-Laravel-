@@ -1,0 +1,9 @@
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+php artisan db:seed --class=AdminSeeder
+cp .env.example .env
+ipconfig php artisan serve --host= ipv4 address --port=8000
+
+
+ if(config('app.env')==='local'){
+        URL::forceScheme('https');
+       }
